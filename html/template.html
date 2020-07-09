@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/tr/html4/strict.dtd">
+<html>
+
+<head>
+    <title>Photovoltaik-Anlage der BBS Brinkstraße</title>
+    <meta name="generator" content="">
+    <meta name="author" content="Christian Wichmann">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css" media="screen">
+        <!--
+        html,
+        body {
+            height: 100%;
+            width: 1024px;
+            padding: 20px;
+            color: #8a8a8a;
+            background-color: #fdfdf3;
+            font-family: FreeSans, Ubuntu, Verdana, Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: #c0c0c0 3px 3px 5px;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px;
+            font-size: larger;
+            text-shadow: #c0c0c0 3px 3px 5px;
+        }
+
+        p {
+            text-align: center;
+            padding: 0px
+        }
+
+        #bbslogo {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+        hr {
+            display: block;
+            position: relative;
+            padding: 0;
+            margin: 8px auto;
+            height: 0;
+            width: 80%;
+            max-height: 0;
+            font-size: 1px;
+            line-height: 0;
+            clear: both;
+            border: none;
+            border-top: 1px solid #aaaaaa;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        #header {
+            padding: 75px 0 0 0;
+            color: rgb(128, 151, 192);
+        }
+
+        #content {
+            padding: 20px;
+            margin: auto;
+            display: table;
+            box-sizing: border-box;
+        }
+
+        #content-row {
+            display: table-row;
+        }
+
+        .content-cell {
+            display: table-cell;
+            float: left;
+            padding: 10px;
+        }
+
+        .table-cell-center {
+            text-align: center;
+        }
+
+        #footer {
+            color: slategray;
+            padding: 0 0 50px 0;
+        }
+        -->
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img id="bbslogo" src="./bbs_logo.png" alt="BBS-Logo">
+        <h1>Photovoltaik-Anlage der BBS Brinkstraße</h1>
+    </div>
+    <hr>
+
+    <div id="content">
+        <div id="content-row">
+            <div class="content-cell">
+                <h2>Technische Daten:</h2>
+                <p>Gesamtfläche = 7,68 m²</p>
+                <p>Maximale Leistung = 1000 W</p>
+            </div>
+            <div class="content-cell">
+                <img src="./pv_anlage.gif" alt="PV-Anlage">
+            </div>
+            <div class="content-cell">
+                <h2>Aktuelle Werte:</h2>
+                <table>
+                    <!--tr>
+                        <td>Aussentemperatur</td>
+                        <td class="table-cell-center">{{ temperature_outdoors }}</td>
+                    </tr>
+                    <tr>
+                        <td>Modultemperatur</td>
+                        <td class="table-cell-center">{{ temperature_module }}</td>
+                    </tr>
+                    <tr>
+                        <td>Einstrahlungsleistung</td>
+                        <td class="table-cell-center">{{ radiation }}</td>
+                    </tr>
+                    <tr>
+                        <td>Gleichspannung</td>
+                        <td class="table-cell-center">{{ voltage_dc }}</td>
+                    </tr>
+                    <tr>
+                        <td>Gleichstrom</td>
+                        <td class="table-cell-center">{{ current_dc }}</td>
+                    </tr>
+                    <tr>
+                        <td>Gleichstromleistung</td>
+                        <td class="table-cell-center">{{ power_dc }}</td>
+                    </tr-->
+                    <tr>
+                        <td>Wechselspannung</td>
+                        <td class="table-cell-center">{{ voltage_ac }}</td>
+                    </tr>
+                    <tr>
+                        <td>Wechselstrom</td>
+                        <td class="table-cell-center">{{ current_ac }}</td>
+                    </tr>
+                    <tr>
+                        <td>Wechselstromleistung</td>
+                        <td class="table-cell-center">{{ power_ac }}</td>
+                    </tr>
+                    <!--tr>
+                        <td>Wirkungsgrad</td>
+                        <td class="table-cell-center">{{ efficiency }}</td>
+                    </tr-->
+                    <tr>
+                        <td>Gesamtleistung</td>
+                        <td class="table-cell-center">{{ power_overall }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div id="footer">
+        <p>Die Anlage wurde gefördert durch die "Deutsche Bundesstiftung Umwelt" und liefert seit 1997 Strom aus der
+            Sonne.<br />
+            Verantwortlich für Aufbau, Betrieb und Wartung: Wilfried Buck, Christian Wichmann</p>
+    </div>
+</body>
+
+</html>
